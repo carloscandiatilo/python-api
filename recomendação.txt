@@ -1,3 +1,12 @@
+############################# CLONAR ################################################################
+python3 -m venv venv (Cria o virtual environment)
+source venv/bin/activate (Activa o virtual environment)
+python -m pip install --upgrade pip(Atualiza o pip dentro do venv)
+pip install fastapi uvicorn sqlalchemy pymysql "pydantic[email]" (Instala todas as dependências necessárias)
+
+#############################################################################################
+
+
 1. Criar ambiente virtual
     
     python3 -m venv venv
