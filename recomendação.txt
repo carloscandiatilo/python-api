@@ -1,0 +1,19 @@
+1. Criar ambiente virtual
+    
+    python3 -m venv venv
+
+2. Ativar o ambiente virtual
+    source venv/bin/activate
+
+3. Atualizar o pip(opcional)
+
+    Atualizar o pip
+
+4.Instalar as dependências
+    pip install fastapi uvicorn sqlalchemy pymysql pydantic
+
+4.1 Instalar a biblioteca python-dotenv
+    pip install python-dotenv
+
+Rodar a API
+    python run.py
