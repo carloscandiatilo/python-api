@@ -4,7 +4,7 @@ from schemas.user import UserCreate
 
 # Criar usuário
 def create_user(db: Session, user: UserCreate):
-    db_user = User(nome=user.nome, email=user.email)
+    db_user = User(nome=user.nome, email=user.email, username=user.username)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
@@ -24,6 +24,7 @@ def update_user(db: Session, user_id: int, new_data: UserCreate):
     if user:
         user.nome = new_data.nome
         user.email = new_data.email
+        user.username = new_data.username
         db.commit()
         db.refresh(user)
     return user

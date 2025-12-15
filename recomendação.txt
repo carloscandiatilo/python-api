@@ -15,5 +15,25 @@
 4.1 Instalar a biblioteca python-dotenv
     pip install python-dotenv
 
+5. Instalar Instalar Alembic
+    pip install alembic
+
+5.1 Inicializar Alembic no projeto
+    alembic init migrations
+
+
+5.1.1 Configurar a URL do banco
+    sqlalchemy.url = mysql+pymysql://usuario:senha@localhost/fastapi_users
+
+
+5.2 Criar a migration com Alembic -(para actualização)
+alembic revision --autogenerate -m "add username to users"
+
+5.3 - Actualizar
+alembic upgrade head
+
+
+
+
 Rodar a API
     python run.py
