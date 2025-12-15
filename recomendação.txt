@@ -1,12 +1,3 @@
-############################# CLONAR ################################################################
-python3 -m venv venv (Cria o virtual environment)
-source venv/bin/activate (Activa o virtual environment)
-python -m pip install --upgrade pip(Atualiza o pip dentro do venv)
-pip install fastapi uvicorn sqlalchemy pymysql "pydantic[email]" (Instala todas as dependências necessárias)
-
-#############################################################################################
-
-
 1. Criar ambiente virtual
     
     python3 -m venv venv
@@ -38,6 +29,9 @@ pip install fastapi uvicorn sqlalchemy pymysql "pydantic[email]" (Instala todas 
 5.2 Criar a migration com Alembic -(para actualização)
 alembic revision --autogenerate -m "add username to users"
 
+alembic revision --autogenerate -m "create phones table"
+
+
 5.3 - Actualizar
 alembic upgrade head
 
@@ -46,3 +40,13 @@ alembic upgrade head
 
 Rodar a API
     python run.py
+
+
+##### INSTALAR DEPENDENCIAS ############
+1. python3 -m venv venv                #
+2.source venv/bin/activate             #
+3.pip install --upgrade pip (opcional) #
+4.pip install -r requirements.txt      #
+5. python run.py (rodar)               #
+
+

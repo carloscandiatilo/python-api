@@ -40,6 +40,7 @@ if config.config_file_name is not None:
 # ---------------------------------------------------------------------
 from database import Base
 from models.user import User  # garante que o model seja registrado
+from models.phone import Phone
 
 target_metadata = Base.metadata
 

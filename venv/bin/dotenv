@@ -1,4 +1,4 @@
-#!/home/carlos_candiatilo/Documentos/apps/python-study/minha-api/venv/bin/python3
+#!/home/carlos_candiatilo/Documentos/apps/python-study/python-api/venv/bin/python3
 import sys
 from dotenv.__main__ import cli
 if __name__ == '__main__':
